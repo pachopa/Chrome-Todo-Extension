@@ -39,6 +39,7 @@ body {
 
 .js-weather {
   text-align: right;
+  font-size: 2em;
 }
 
 li {
