@@ -1,13 +1,34 @@
+<!-- 
+
+디자인 바꾸기X
+날짜 업데이트X
+unsplash에서 landscape api 따오기X
+왼쪽이나 오른쪽에 내가 자주가는 사이트 링크 걸어놓기X
+그다음 리다이렉트 유아엘 바꾸기X
+전날 했던 todo list를 저장하고 이메일로 보내주기X
+뉴스를 오른쪽에 놓아도 괜찮겠다X
+https://github.com/unsplash/unsplash-js / unsplash 자료X
+https://www.taskade.com/templates/#meetings // reference for this pageX
+내 메일함을 여기에다가 보여줘도 좋겠다X
+zsh 인가 그거 터미널 환경설정해주는거 해보기X
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css" />
   <title>Document</title>
 </head>
+
 <body>
   <div class="js-weather"></div>
+  <form action="http://google.com/search" target="_blank">
+    <input id="myText" name="q">
+    <input type="submit">
+  </form>
   <div class="js-clock">
     <h1 class="time">00:00</h1>
   </div>
@@ -26,5 +47,12 @@
   <script src="todo.js"></script>
   <script src="bg.js"></script>
   <script src="weather.js"></script>
+  <script>
+    window.onload = function() {
+      document.getElementById("myText").focus();
+    };
+    </script>
+    
 </body>
+
 </html>
